@@ -1,0 +1,18 @@
+{
+  "presets": [
+    "@babel/preset-typescript",
+    [
+      "@babel/preset-env",
+      {
+        "corejs": 3,
+        "useBuiltIns": "usage",
+        "modules": false
+      }
+    ],
+    "@babel/preset-react"
+  ],
+  "ignore": [
+    "**/*.test.ts",
+    "**/*.test.tsx"
+  ]
+}

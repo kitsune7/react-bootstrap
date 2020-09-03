@@ -1,0 +1,56 @@
+{
+  "name": "react-bootstrap",
+  "description": "A bootstrap repository for getting a React.js project started up quickly",
+  "version": "1.0.0",
+  "main": "src/index.tsx",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "parcel src/index.html",
+    "test": "jest --runInBand --config jest.config.js",
+    "prebuild": "rm -rf dist",
+    "build": "parcel build src/index.html",
+    "format": "prettier --write \"src/**/*.(ts|tsx)\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "author": "Christopher Bradshaw",
+  "license": "MIT",
+  "homepage": "https://github.com/kitsune7/react-bootstrap#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kitsune7/react-bootstrap"
+  },
+  "bugs": {
+    "url": "https://github.com/kitsune7/react-bootstrap/issues"
+  },
+  "dependencies": {
+    "parcel": "^1.12.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "@testing-library/react": "^11.0.0",
+    "@types/jest": "^26.0.7",
+    "@types/node": "^14.0.26",
+    "@types/react": "^16.9.43",
+    "@types/react-dom": "^16.9.8",
+    "core-js": "3.6.5",
+    "jest": "^26.4.2",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.1.3",
+    "tslib": "^2.0.0",
+    "tslint": "^6.1.2",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.9.7"
+  }
+}

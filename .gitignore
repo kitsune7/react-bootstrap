@@ -1,3 +1,14 @@
+# JetBrains project folder
+.idea/
+
+# Mac files
+.DS_Store
+
+# Package files
+yarn.lock
+yarn-error
+package-lock.json
+
 # Logs
 logs
 *.log
