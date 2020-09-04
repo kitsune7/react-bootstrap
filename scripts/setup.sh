@@ -72,7 +72,7 @@ git commit -m "Initial commit"
 shouldAddRemote=$(prompt "Would you like to immediately add your repository to GitHub (y/n)? " "n")
 case ${shouldAddRemote:0:1} in
   y|Y)
-    git remote add origin "git@github.com:$username/$name.git"
+    git remote add origin "https://github.com/$username/$name.git"
     git push -u origin master
     echo "You're repository is setup remotely at https://github.com/$username/$name"
   ;;

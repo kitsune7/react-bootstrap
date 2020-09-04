@@ -12,4 +12,5 @@ npm run setup
 ```
 
 You'll have the option to automatically push your new repository to GitHub. In order for this to work, you'll need to
-use the correct username and have ssh setup with GitHub in advance.
+a GitHub account that you have access to. Your global git config should also have the correct information for your
+commits to work as you expect them to.
