@@ -46,7 +46,7 @@ echo "Copying repository files"
 cp -R "${files[@]}" "$repoPath"
 
 echo "Generating README.md"
-printf "# %s\n%s\n" "$name" "$description" > README.md
+printf "# %s\n%s\n" "$name" "$description" > "$repoPath/README.md"
 
 echo "Updating package.json"
 cd "$repoPath" || return
