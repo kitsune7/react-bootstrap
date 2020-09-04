@@ -69,7 +69,7 @@ git init
 git add .
 git commit -m "Initial commit"
 
-shouldAddRemote=$(prompt "Would you like to immediately add your repository to GitHub (y/n)? " "n")
+shouldAddRemote=$(prompt "Would you like to connect your repository to GitHub (y/n)? " "n")
 case ${shouldAddRemote:0:1} in
   y|Y)
     git remote add origin "https://github.com/$username/$name.git"
@@ -85,9 +85,9 @@ esac
 
 echo "Installing dependencies"
 if ! command -v yarn &> /dev/null; then
-  npm install --silent
+  npm install
 else
-  yarn install --silent
+  yarn install
 fi
 
 echo "You're all setup! Local repository installed in $repoPath"

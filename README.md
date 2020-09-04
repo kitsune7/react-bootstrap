@@ -11,6 +11,7 @@ Just run the following command and respond to the prompts.
 npm run setup
 ```
 
-You'll have the option to automatically push your new repository to GitHub. In order for this to work, you'll need to
-a GitHub account that you have access to. Your global git config should also have the correct information for your
-commits to work as you expect them to.
+You'll have the option to automatically connect your new repository to GitHub. In order for this to work, you'll need to
+create the repository on GitHub first. The name you enter in the setup prompt and the name of the repository on GitHub
+should match exactly. Your global git config should also have the correct information for your commits to work as you
+expect them to.
