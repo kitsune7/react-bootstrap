@@ -5,6 +5,7 @@
   "main": "src/index.tsx",
   "scripts": {
     "start": "npm run dev",
+    "setup": "chmod +x scripts/* && scripts/setup.sh",
     "dev": "parcel src/index.html",
     "test": "jest --runInBand --config jest.config.js",
     "prebuild": "rm -rf dist",
