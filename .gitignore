@@ -1,11 +1,10 @@
 # JetBrains project folder
 .idea/
 
-# Mac files
+# macOS files
 .DS_Store
 
 # Package files
-yarn.lock
 yarn-error
 package-lock.json
 
@@ -91,7 +90,8 @@ typings/
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+dist/
+lib/
 
 # Gatsby files
 .cache/

@@ -11,8 +11,5 @@
     ],
     "@babel/preset-react"
   ],
-  "ignore": [
-    "**/*.test.ts",
-    "**/*.test.tsx"
-  ]
+  "ignore": ["**/*.test.ts", "**/*.test.tsx"]
 }
